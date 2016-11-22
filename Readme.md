@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Шипачева](https://up.htmlacademy.ru/adaptive/9/user/183375).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
