@@ -1,12 +1,258 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta charset="UTF-8">
+    <title>Pink</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="visually-hidden">Pink</h1>
+      <div class="page-header__wrapper">
+        <a class="logo">
+          <img src="" alt="Логотип">
+        </a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="promo-block">
+        <a class="btn" href="">Скачать приложение</a>
+        <p class="promo-block__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="promo-block__apps">
+          <a class="promo-block__link" href="">Скачать в App Store</a>
+          <a class="promo-block__link" href="">Скачать в Google Play</a>
+          <a class="promo-block__link" href="">Скачать в WP Store</a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="advantages">
+        <div class="advantages__slogan">
+          <p class="advantages__slogan-item">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan-item">Нам есть, что вам  предложить!</p>
+        </div>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="research">
+        <div class="research__wrapper">
+          <b class="research__name">Эффект на 24 часа!</b>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__more" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper slider">
+          <input class="slider__input" type="radio" name="review" id="btn-1" checked>
+          <input class="slider__input" type="radio" name="review" id="btn-2">
+          <input class="slider__input" type="radio" name="review" id="btn-3">
+          <div class="reviews__items">
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+              <span class="rewiews__profession">25 лет, водитель трамвая</span>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Светлана Иванова</cite>
+              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомилась со своим будущим мужем в комментариях к выложенной фотографии!</q>
+              <span class="rewiews__profession">25 лет, флорист</span>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Алексей Сидоров</cite>
+              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+              <span class="rewiews__profession">25 лет, водитель трамвая</span>
+            </blockquote>
+          </div>
+          <div class="review__toggles slider__toggles">
+            <label class="slider__toggle" for="btn-1">1</label>
+            <label class="slider__toggle" for="btn-2">2</label>
+            <label class="slider__toggle" for="btn-3">3</label>
+          </div>
+        </div>
+      </section>
+      <section class="rates">
+        <div class="rates__wrapper  slider">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <input class="slider__input" type="radio" name="price" id="rates-btn-1">
+          <input class="slider__input" type="radio" name="price" id="rates-btn-2" checked>
+          <input class="slider__input" type="radio" name="price" id="rates-btn-3">
+          <table class="rates__table">
+            <tr>
+              <th></th>
+              <th>
+                <span class="rates__title">База</span>
+                <span class="rates__value">1,99 usd</span>
+              </th>
+              <th>
+                <span class="rates__title">Стандарт</span>
+                <span class="rates__value">3,99 usd</span>
+              </th>
+              <th>
+                <span class="rates__title">Анлим</span>
+                <span class="rates__value">9,99 usd</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="rates__hidden">
+                <span class="rates__name">Розовый фильтр</span>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Розовый фильтр</span>
+                  <div class="rates__check-mark rates__check-mark--marked"></div>
+                </div>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Розовый фильтр</span>
+                  <div class="rates__check-mark rates__check-mark--marked"></div>
+                </div>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Розовый фильтр</span>
+                  <div class="rates__check-mark rates__check-mark--marked"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="rates__hidden">
+                <span class="rates__name">Смайлики</span>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Смайлики</span>
+                  <div class="rates__check-mark rates__check-mark--unmarked"></div>
+                </div>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Смайлики</span>
+                  <div class="rates__check-mark rates__check-mark--marked"></div>
+                </div>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Смайлики</span>
+                  <div class="rates__check-mark rates__check-mark--marked"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="rates__hidden">
+                <span class="rates__name">Комментарии</span>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Комментарии</span>
+                  <div class="rates__check-mark rates__check-mark--unmarked"></div>
+                </div>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Комментарии</span>
+                  <div class="rates__check-mark rates__check-mark--unmarked"></div>
+                </div>
+              </td>
+              <td>
+                <div class="rates__check-marks">
+                  <span class="rates__check-mark-name">Комментарии</span>
+                  <div class="rates__check-mark rates__check-mark--marked"></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="rates__toggles slider__toggles">
+            <label class="slider__toggle" for="rates-btn-1"></label>
+            <label class="slider__toggle" for="rates-btn-2"></label>
+            <label class="slider__toggle" for="rates-btn-3"></label>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__text">Остались вопросы?</p>
+        <p class="contacts__text">Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b class="contacts__type">Звоните:</b>
+            <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__type">Пишите:</b>
+            <a class="contacts__value contacts__value--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__type">Приезжайте в гости:</b>
+            <a class="contacts__value" href="#">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+        <div id="map" class="contacts__map"></div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer-logo">
+          Pink
+        </a>
+        <section class="social-links">
+          <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+            <a class="social-link  social-link--tw" href="#">
+              Твиттер
+            </a><span class="visually-hidden">,</span>
+            <a class="social-link  social-link--fb" href="#">
+              Фейсбук
+            </a><span class="visually-hidden">,</span>
+            <a class="social-link  social-link--yt" href="#">
+              Твиттер
+            </a>
+        </section>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+          Разработано
+          <svg aria-hidden="true" width="26.943px" height="34.09px"><use xmlns:xlink="http://www.w3.org/1999/xlink"
+          xlink:href="#logo-htmlacademy"></use></svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
