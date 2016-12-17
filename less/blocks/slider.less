@@ -1,0 +1,31 @@
+.slider__input {
+  display: none;
+}
+
+.slider__toggles {
+  text-align: center;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: 3px solid @white-color;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.slider__item {
+  display: none;
+}
+
+#btn-1:checked ~ .slider__toggles .slider__toggle[for="btn-1"],
+#btn-2:checked ~ .slider__toggles .slider__toggle[for="btn-2"],
+#btn-3:checked ~ .slider__toggles .slider__toggle[for="btn-3"] {
+  border: 3px solid @text-color;
+  background-color: @white-color;
+}

@@ -1,0 +1,59 @@
+.promo-block {
+  height: 733px;
+
+  background-color: #1d2631;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 176px, center top;
+  background-size: 258px, 700px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.promo-block__wrapper {
+  .container();
+  padding-top: 490px;
+}
+
+.promo-block__apps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 21px;
+  padding: 0 13%;
+
+  font-size: 0;
+}
+
+.promo-block__link {
+  display: inline-block;
+  width: 50px;
+  height: 56px;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  &--ios {
+    background: url("../img/logo-apple.svg") no-repeat 0 0;
+  }
+
+  &--android {
+    background: url("../img/logo-android.svg") no-repeat 4px 8px;
+  }
+
+  &--wp {
+    background: url("../img/logo-microsoft.svg") no-repeat 4px 12px;
+  }
+
+}
+
+.promo-block__intro {
+  margin: 0;
+
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+
+  color: @white-color;
+}
+
+

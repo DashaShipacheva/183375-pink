@@ -13,11 +13,11 @@
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="visually-hidden">Pink</h1>
+    <header class="page-header  page-header--nojs">
       <div class="page-header__wrapper">
-        <a class="logo">
-          <img src="" alt="Логотип">
+        <h1 class="visually-hidden">Pink</h1>
+        <a class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
         </a>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -37,75 +37,84 @@
           </ul>
         </nav>
       </div>
-      <section class="promo-block">
-        <a class="btn" href="">Скачать приложение</a>
-        <p class="promo-block__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        <div class="promo-block__apps">
-          <a class="promo-block__link" href="">Скачать в App Store</a>
-          <a class="promo-block__link" href="">Скачать в Google Play</a>
-          <a class="promo-block__link" href="">Скачать в WP Store</a>
-        </div>
-      </section>
     </header>
+    <section class="promo-block">
+      <div class="promo-block__wrapper">
+        <a class="btn" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" target="_blank">Скачать приложение</a>
+        <div class="promo-block__apps">
+          <a class="promo-block__link  promo-block__link--ios" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" target="_blank" rel="noopener noreferrer">Скачать в App Store</a>
+          <a class="promo-block__link  promo-block__link--android" href="https://play.google.com/store?hl=ru" target="_blank" rel="noopener noreferrer">Скачать в Google Play</a>
+          <a class="promo-block__link  promo-block__link--wp" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank" rel="noopener noreferrer">Скачать в WP Store</a>
+        </div>
+        <p class="promo-block__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
     <main>
       <section class="advantages">
         <div class="advantages__slogan">
-          <p class="advantages__slogan-item">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan-item">Нам есть, что вам  предложить!</p>
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам<br> предложить!</p>
         </div>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
+            <b class="advantages__title">Поднимает настроение</b>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <b class="advantages__title">Меняет мир вокруг</b>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <b class="advantages__title">Заводит новых друзей</b>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
       <section class="research">
         <div class="research__wrapper">
+          <h2 class="visually-hidden">Исследования</h2>
           <b class="research__name">Эффект на 24 часа!</b>
           <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="research__more" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
           <input class="slider__input" type="radio" name="review" id="btn-1" checked>
           <input class="slider__input" type="radio" name="review" id="btn-2">
           <input class="slider__input" type="radio" name="review" id="btn-3">
-          <div class="reviews__items">
+          <div class="reviews__items  slider__items">
             <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="rewiews__author-profession">25 лет, водитель трамвая</span>
+              </div>
+              <q class="reviews__content">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
-              <span class="rewiews__profession">25 лет, водитель трамвая</span>
             </blockquote>
             <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">Светлана Иванова</cite>
-              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Светлана Иванова</cite>
+                <span class="rewiews__author-profession">25 лет, флорист</span>
+              </div>
+              <q class="reviews__content">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомилась со своим будущим мужем в комментариях к выложенной фотографии!</q>
-              <span class="rewiews__profession">25 лет, флорист</span>
             </blockquote>
             <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">Алексей Сидоров</cite>
-              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Алексей Сидоров</cite>
+                <span class="rewiews__author-profession">25 лет, водитель трамвая</span>
+              </div>
+              <q class="reviews__content">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
-              <span class="rewiews__profession">25 лет, водитель трамвая</span>
             </blockquote>
           </div>
-          <div class="review__toggles slider__toggles">
-            <label class="slider__toggle" for="btn-1">1</label>
-            <label class="slider__toggle" for="btn-2">2</label>
-            <label class="slider__toggle" for="btn-3">3</label>
+          <div class="reviews__toggles slider__toggles">
+            <label class="slider__toggle" for="btn-1"></label>
+            <label class="slider__toggle" for="btn-2"></label>
+            <label class="slider__toggle" for="btn-3"></label>
           </div>
         </div>
       </section>
@@ -115,117 +124,121 @@
           <input class="slider__input" type="radio" name="price" id="rates-btn-1">
           <input class="slider__input" type="radio" name="price" id="rates-btn-2" checked>
           <input class="slider__input" type="radio" name="price" id="rates-btn-3">
-          <table class="rates__table">
-            <tr>
-              <th></th>
-              <th>
-                <span class="rates__title">База</span>
-                <span class="rates__value">1,99 usd</span>
-              </th>
-              <th>
-                <span class="rates__title">Стандарт</span>
-                <span class="rates__value">3,99 usd</span>
-              </th>
-              <th>
-                <span class="rates__title">Анлим</span>
-                <span class="rates__value">9,99 usd</span>
-              </th>
-            </tr>
-            <tr>
-              <td class="rates__hidden">
-                <span class="rates__name">Розовый фильтр</span>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Розовый фильтр</span>
-                  <div class="rates__check-mark rates__check-mark--marked"></div>
-                </div>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Розовый фильтр</span>
-                  <div class="rates__check-mark rates__check-mark--marked"></div>
-                </div>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Розовый фильтр</span>
-                  <div class="rates__check-mark rates__check-mark--marked"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="rates__hidden">
-                <span class="rates__name">Смайлики</span>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Смайлики</span>
-                  <div class="rates__check-mark rates__check-mark--unmarked"></div>
-                </div>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Смайлики</span>
-                  <div class="rates__check-mark rates__check-mark--marked"></div>
-                </div>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Смайлики</span>
-                  <div class="rates__check-mark rates__check-mark--marked"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="rates__hidden">
-                <span class="rates__name">Комментарии</span>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Комментарии</span>
-                  <div class="rates__check-mark rates__check-mark--unmarked"></div>
-                </div>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Комментарии</span>
-                  <div class="rates__check-mark rates__check-mark--unmarked"></div>
-                </div>
-              </td>
-              <td>
-                <div class="rates__check-marks">
-                  <span class="rates__check-mark-name">Комментарии</span>
-                  <div class="rates__check-mark rates__check-mark--marked"></div>
-                </div>
-              </td>
-            </tr>
-          </table>
+          <div class="rates__table-wrapper">
+            <table class="rates__table">
+              <tr>
+                <th class="rates__col-1"></th>
+                <th class="rates__col-2">
+                  <span class="rates__title">База</span>
+                  <span class="rates__value">1,99 usd</span>
+                </th>
+                <th class="rates__col-3  rates__col-3--ribbon">
+                  <span class="rates__title">Стандарт</span>
+                  <span class="rates__value">3,99 usd</span>
+                </th>
+                <th class="rates__col-4">
+                  <span class="rates__title">Анлим</span>
+                  <span class="rates__value">9,99 usd</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="rates__col-1">
+                  <span class="rates__name">Розовый фильтр</span>
+                </td>
+                <td class="rates__col-2">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Розовый фильтр</span>
+                    <span class="rates__check-mark rates__check-mark--marked">Есть</span>
+                  </div>
+                </td>
+                <td class="rates__col-3">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Розовый фильтр</span>
+                    <span class="rates__check-mark rates__check-mark--marked">Есть</span>
+                  </div>
+                </td>
+                <td class="rates__col-4">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Розовый фильтр</span>
+                    <span class="rates__check-mark rates__check-mark--marked">Есть</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__col-1">
+                  <span class="rates__name">Смайлики</span>
+                </td>
+                <td class="rates__col-2">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Смайлики</span>
+                    <span class="rates__check-mark rates__check-mark--unmarked">Нет</span>
+                  </div>
+                </td>
+                <td class="rates__col-3">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Смайлики</span>
+                    <span class="rates__check-mark rates__check-mark--marked">Есть</span>
+                  </div>
+                </td>
+                <td class="rates__col-4">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Смайлики</span>
+                    <span class="rates__check-mark rates__check-mark--marked">Есть</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__col-1">
+                  <span class="rates__name">Комментарии</span>
+                </td>
+                <td class="rates__col-2">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Комментарии</span>
+                    <span class="rates__check-mark rates__check-mark--unmarked">Нет</span>
+                  </div>
+                </td>
+                <td class="rates__col-3">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Комментарии</span>
+                    <span class="rates__check-mark rates__check-mark--unmarked">Нет</span>
+                  </div>
+                </td>
+                <td class="rates__col-4">
+                  <div class="rates__check-marks">
+                    <span class="rates__name">Комментарии</span>
+                    <span class="rates__check-mark rates__check-mark--marked">Есть</span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
           <div class="rates__toggles slider__toggles">
-            <label class="slider__toggle" for="rates-btn-1"></label>
-            <label class="slider__toggle" for="rates-btn-2"></label>
-            <label class="slider__toggle" for="rates-btn-3"></label>
+            <label class="rates__toggle  slider__toggle" for="rates-btn-1"></label>
+            <label class="rates__toggle  slider__toggle" for="rates-btn-2"></label>
+            <label class="rates__toggle  slider__toggle" for="rates-btn-3"></label>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text">Остались вопросы?</p>
-        <p class="contacts__text">Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <b class="contacts__type">Звоните:</b>
-            <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item">
-            <b class="contacts__type">Пишите:</b>
-            <a class="contacts__value contacts__value--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item">
-            <b class="contacts__type">Приезжайте в гости:</b>
-            <a class="contacts__value" href="#">ул. Большая Конюшенная, 19/8</a>
-          </li>
-        </ul>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__text">Остались вопросы?</p>
+          <p class="contacts__text">Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <b class="contacts__type">Звоните:</b>
+              <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__type">Пишите:</b>
+              <a class="contacts__value contacts__value--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__type">Приезжайте в гости:</b>
+              <a class="contacts__value" href="#">ул. Большая Конюшенная, 19/8</a>
+            </li>
+          </ul>
+        </div>
         <div id="map" class="contacts__map"></div>
       </section>
     </main>
