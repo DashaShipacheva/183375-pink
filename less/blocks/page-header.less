@@ -1,0 +1,39 @@
+.page-header {
+  position: relative;
+
+  margin-bottom: -66px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--open-nav,
+.page-header--nojs {
+  background-color: @text-color;
+
+  .page-header__logo {
+    padding-bottom: 24px;
+  }
+}
+
+.page-header--open-nav .page-header__logo {
+  border-bottom: @border-bottom;
+}
+
+.page-header__logo {
+  display: block;
+  height: 22px;
+  padding: 22px 6.25% 21px;
+
+  img {
+    height: 22px;
+    width: 75px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

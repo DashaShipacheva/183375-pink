@@ -1,0 +1,32 @@
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: auto;
+  max-width: 659px;
+  padding: 0 6.25%;
+
+  @media @tablet-widths {
+    width: auto;
+    max-width: 959px;
+    padding: 0 3.030303%;
+  }
+
+  @media @desktop-widths {
+    padding: 0 1.041667%;
+  }
+
+}
+
+.list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

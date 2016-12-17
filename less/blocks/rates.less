@@ -1,0 +1,126 @@
+.rates {
+  background-color: #f2f2f2;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+}
+
+.rates__wrapper {
+  padding-top: 88px;
+  padding-bottom: 43px;
+}
+
+.rates__table {
+  min-width: 261%;
+  margin-bottom: 30px;
+
+  border-collapse: collapse;
+
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+
+  th {
+    padding: 18px 0 20px;
+
+    text-transform: uppercase;
+    color: @white-color;
+    background-color: @text-color;
+    border: @border-table;
+  }
+
+  td {
+    background-color: @white-color;
+    border: @border-table;
+  }
+
+}
+
+.rates__title {
+  display: block;
+
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 700;
+}
+
+.rates__value {
+  font-size: 24px;
+  line-height: 1.24;
+  font-weight: 300;
+}
+
+.rates__col-1 {
+  display: none;
+}
+
+.rates__check-marks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0 14px;
+  padding-left: 8%;
+  padding-right: 6.5%;
+}
+
+.rates__name {
+  line-height: 2.2;
+
+  text-transform: uppercase;
+}
+
+.rates__check-mark {
+  display: block;
+  width: 31px;
+  height: 26px;
+
+  font-size: 0;
+
+  &--marked {
+    background: url("../img/icon-yes.svg") no-repeat 50% 50%;
+  }
+
+  &--unmarked {
+    background: url("../img/icon-no.svg") no-repeat 50% 50%;
+  }
+
+}
+
+.rates__col-3--ribbon {
+  position: relative;
+
+  background: url("../img/bg-hit.svg") no-repeat 0% 0%;
+
+  &::before {
+    content: "Хит";
+    position: absolute;
+    left: 10px;
+    top: 12px;
+
+    text-transform: uppercase;
+    color: currentColor;
+    transform: rotate(-45deg);
+  }
+}
+
+.rates__toggle {
+  border: 3px solid #f2f2f2;
+}
+
+#rates-btn-1:checked ~ .rates__toggles .rates__toggle[for="rates-btn-1"],
+#rates-btn-2:checked ~ .rates__toggles .rates__toggle[for="rates-btn-2"],
+#rates-btn-3:checked ~ .rates__toggles .rates__toggle[for="rates-btn-3"] {
+  border: 3px solid @text-color;
+  background-color: @white-color;
+}
+
+#rates-btn-1:checked ~ .rates__table-wrapper .rates__table {
+  transform: translateX(0);
+}
+
+#rates-btn-2:checked ~ .rates__table-wrapper .rates__table {
+  transform: translateX(-30.9%);
+}
+
+#rates-btn-3:checked ~ .rates__table-wrapper .rates__table {
+  transform: translateX(-61.7%);
+}
