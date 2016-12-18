@@ -39,5 +39,35 @@
 #btn-1:checked ~ .reviews__items .reviews__item:nth-child(1),
 #btn-2:checked ~ .reviews__items .reviews__item:nth-child(2),
 #btn-3:checked ~ .reviews__items .reviews__item:nth-child(3) {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+@media @tablet-widths {
+
+  .reviews__wrapper {
+    padding-top: 65px;
+    padding-bottom: 15px;
+  }
+
+  .reviews__author {
+    order: 2;
+    margin-bottom: 7px;
+  }
+
+  .rewiews__author-profession {
+    display: block;
+  }
+
+  .reviews__content {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+  }
+
 }
