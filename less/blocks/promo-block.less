@@ -13,6 +13,10 @@
   padding-top: 490px;
 }
 
+.promo-block__title {
+  display: none;
+}
+
 .promo-block__apps {
   display: flex;
   justify-content: space-between;
@@ -54,4 +58,42 @@
   text-align: center;
 
   color: @white-color;
+}
+
+@media @tablet-widths {
+
+  .promo-block {
+    height: 728px;
+  }
+
+  .promo-block__wrapper {
+    padding: 202px 51.612% 0 5.6%;
+
+    text-align: center;
+  }
+
+  .promo-block__title {
+    display: block;
+    padding: 0 17.5% 31px;
+    margin: 0;
+
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+
+    color: @white-color;
+  }
+
+  .promo-block__apps {
+    margin-top: 45px;
+    margin-bottom: 38px;
+    padding: 0 16%;
+
+    font-size: 0;
+  }
+
+  .promo-block__intro {
+    font-size: 18px;
+  }
+
 }
