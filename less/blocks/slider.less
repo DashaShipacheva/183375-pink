@@ -17,6 +17,14 @@
   border: 3px solid @white-color;
   vertical-align: middle;
   cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider__item {
@@ -28,4 +36,13 @@
 #btn-3:checked ~ .slider__toggles .slider__toggle[for="btn-3"] {
   border: 3px solid @text-color;
   background-color: @white-color;
+  opacity: 1;
+}
+
+@media @desktop-widths {
+
+  .slider__toggles {
+    display: none;
+  }
+
 }

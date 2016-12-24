@@ -1,0 +1,60 @@
+.heading-block {
+  height: 238px;
+
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center top;
+  background-size: 700px;
+  background-repeat: no-repeat;
+
+  text-align: center;
+}
+
+.heading-block__title {
+  margin: 0 auto;
+  padding-top: 98px;
+  width: 54.6875%;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+
+  color: @white-color;
+
+  &--form {
+    width: 72.5%;
+  }
+}
+
+@media @tablet-widths {
+
+  .heading-block {
+    height: 437px;
+  }
+
+  .heading-block__title {
+    padding-top: 176px;
+
+    font-size: 50px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .heading-block {
+    height: 393px;
+  }
+
+  .heading-block__title {
+    padding-top: 173px;
+    padding-left: 10px;
+    width: 355px;
+
+    &--form {
+      width: 747px;
+      padding-left: 10px;
+    }
+  }
+
+}

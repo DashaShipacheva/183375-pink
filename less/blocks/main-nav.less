@@ -36,7 +36,17 @@
   box-shadow: 0 10px 0 0 @white-color,
               0 20px 0 0 @white-color;
 
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @decorative-color;
+  box-shadow: 0 10px 0 0 @decorative-color,
+              0 20px 0 0 @decorative-color;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -64,6 +74,16 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @decorative-color;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list {
@@ -74,25 +94,28 @@
   background-color: @text-color;
 }
 
-.main-nav__link {
-  display: block;
-  padding: 16.5px 0 14px;
-
+.main-nav__item {
   font-size: 18px;
   text-align: center;
+
+  border-top: @border-top;
+  border-bottom: @border-bottom;
+}
+
+.main-nav__link {
+  display: inline-block;
+  padding: 15px 20px 15px;
 
   color: @white-color;
   text-decoration: none;
   text-transform: uppercase;
-  border-top: @border-top;
-  border-bottom: @border-bottom;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: @decorative-color;
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
 
 }
@@ -120,4 +143,75 @@
     top: 43px;
     right: 5.8%;
   }
+
+}
+
+@media @desktop-widths {
+
+  .main-nav {
+    width: auto;
+
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-weight: 400;
+
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .main-nav__link {
+    display: block;
+    padding: 12px 0 5px;
+    margin-left: 80px;
+
+    text-transform: none;
+
+    &:hover {
+      color: @decorative-color;
+    }
+
+    &:active {
+      color: @white-color;
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__item:hover::after {
+    background-color: @decorative-color;
+  }
+
+  .main-nav__item--active {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      left: 80px;
+
+      height: 2px;
+
+      background-color: @white-color;
+    }
+
+    .main-nav__link:active {
+      color: @decorative-color;
+      opacity: 1;
+    }
+  }
+
 }
