@@ -13,49 +13,53 @@
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header  page-header--nojs">
       <div class="page-header__wrapper">
-        <a class="logo" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-        </a>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </a>
+        </div>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Фотографии</a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
       </div>
-      <section class="promo-block">
-        <h1 class="promo-block__title">Фотографии пользователей</h1>
-      </section>
     </header>
     <main>
+      <section class="heading-block">
+        <h1 class="heading-block__title">Фотографии пользователей</h1>
+      </section>
       <div class="photo-slogan">
-        <p class="photo-slogan__intro">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
+        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
-      <section class="photo-items"></section>
+      <section class="photo-items">
         <article class="photo-item">
-          <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+          <a class="photo-item__image  photo-item__image--another">
+            <img src="img/panorama-mobile@1x.jpg" alt="User photo">
           </a>
-          <div class="photo-item__content">
-            <span class="photo-item__user">Анна</span>
-            <time class="photo-item__time" datetime="2016-11-25T00:05">(5 минут назад)</time>
-            <p class="photo-item__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите
+          <div class="photo-item__content  photo-item__content--row">
+            <div class="photo-item__info">
+              <span class="photo-item__user">Анна</span>
+              <time class="photo-item__time" datetime="2016-11-25T00:05">(5 минут назад)</time>
+            </div>
+            <p class="photo-item__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите
             прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo-item__likes">
+            <div class="photo-item__likes  photo-item__likes--row">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">215</span>
             </div>
@@ -63,13 +67,16 @@
         </article>
         <article class="photo-item">
           <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+            <img src="img/photo-1-mobile@1x.jpg" alt="User photo">
           </a>
           <div class="photo-item__content">
-            <span class="photo-item__user">Левон</span>
-            <time class="photo-item__time" datetime="2016-11-25T05:00">(5 часов назад)</time>
+            <div class="photo-item__info">
+              <span class="photo-item__user">Левон</span>
+              <time class="photo-item__time" datetime="2016-11-25T05:00">(5 часов назад)</time>
+            </div>
             <p class="photo-item__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo-item__likes">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">356</span>
             </div>
@@ -77,13 +84,16 @@
         </article>
         <article class="photo-item">
           <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+            <img src="img/photo-2-mobile@1x.jpg" alt="User photo">
           </a>
           <div class="photo-item__content">
-            <span class="photo-item__user">Антон</span>
-            <time class="photo-item__time" datetime="2016-11-25T12:00">(12 часов назад)</time>
+            <div class="photo-item__info">
+              <span class="photo-item__user">Антон</span>
+              <time class="photo-item__time" datetime="2016-11-25T12:00">(12 часов назад)</time>
+            </div>
             <p class="photo-item__comment">Соседи будут рады!</p>
             <div class="photo-item__likes">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">666</span>
             </div>
@@ -91,13 +101,16 @@
         </article>
         <article class="photo-item">
           <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+            <img src="img/photo-3-mobile@1x.jpg" alt="User photo">
           </a>
           <div class="photo-item__content">
-            <span class="photo-item__user">Борис</span>
-            <time class="photo-item__time" datetime="2016-11-25T20:00">(20 часов назад)</time>
+            <div class="photo-item__info">
+              <span class="photo-item__user">Борис</span>
+              <time class="photo-item__time" datetime="2016-11-25T20:00">(20 часов назад)</time>
+            </div>
             <p class="photo-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo-item__likes">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">215</span>
             </div>
@@ -105,13 +118,16 @@
         </article>
         <article class="photo-item">
           <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+            <img src="img/photo-4-mobile@1x.jpg" alt="User photo">
           </a>
           <div class="photo-item__content">
-            <span class="photo-item__user">Сергей</span>
-            <time class="photo-item__time" datetime="2016-11-25T01:00">(25 часов назад)</time>
+            <div class="photo-item__info">
+              <span class="photo-item__user">Сергей</span>
+              <time class="photo-item__time" datetime="2016-11-25T01:00">(25 часов назад)</time>
+            </div>
             <p class="photo-item__comment">Самая кубанская в мире!</p>
             <div class="photo-item__likes">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">4</span>
             </div>
@@ -119,13 +135,16 @@
         </article>
         <article class="photo-item">
           <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+            <img src="img/photo-5-mobile@1x.jpg" alt="User photo">
           </a>
           <div class="photo-item__content">
-            <span class="photo-item__user">Максим</span>
-            <time class="photo-item__time" datetime="2016-11-25T16:00">(40 часов назад)</time>
+            <div class="photo-item__info">
+              <span class="photo-item__user">Максим</span>
+              <time class="photo-item__time" datetime="2016-11-25T16:00">(40 часов назад)</time>
+            </div>
             <p class="photo-item__comment">Где снег-то?</p>
             <div class="photo-item__likes">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">150</span>
             </div>
@@ -133,74 +152,89 @@
         </article>
         <article class="photo-item">
           <a class="photo-item__image">
-            <img src="" alt="Фото пользователя">
+            <img src="img/photo-6-mobile@1x.jpg" alt="User photo">
           </a>
           <div class="photo-item__content">
-            <span class="photo-item__user">Надежда</span>
-            <time class="photo-item__time" datetime="2016-11-25T21:00">(45 часов назад)</time>
+            <div class="photo-item__info">
+              <span class="photo-item__user">Надежда</span>
+              <time class="photo-item__time" datetime="2016-11-25T21:00">(45 часов назад)</time>
+            </div>
             <p class="photo-item__comment">Всем GM и взаимные лайки!</p>
             <div class="photo-item__likes">
+              <span class="photo-item__likes-icon"></span>
               <a class="photo-item__likes-link">Нравится:</a>
               <span class="photo-item__likes-count">2560</span>
             </div>
           </div>
         </article>
       </section>
-      <div class="photo-slogan">
-        <p class="photo-slogan__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo-slogan  photo-slogan--bottom">
+        <p>Затмите их всех!</p>
+        <p>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="photo-filter">
-        <form class="form-filter" method="post" action="#.js">
-          <div class="form-filter__image">
-            <img src="" alt="Выберите изображение">
-          </div>
-          <div class="form-filter__items">
-            <ul class="form-filter__list">
-              <li class="form-filter__item">
-                <input class="form-filter__input" type="radio" name="correct" value="crop" id="crop" checked>
-                <label class="form-filter__label" for="crop"></label>
-                <input class="form-filter__input  form-filter__input--range" type="range" name="correct_crop" min="0" max="100" step="1" value="50">
-                <div class="form-filter__scale-slider  form-photo__scale-slider--crop">
-                  <div class="form-filter__scale-slider-line">
-                    <span class="form-filter__scale-slider-point form-photo__scale-slider-point--crop"></span>
+        <form class="photo-filter__form" method="post" action="https://echo.htmlacademy.ru">
+          <figure class="photo-filter__image">
+            <img src="img/photo-7-mobile@1x.jpg" alt="Photo">
+          </figure>
+          <div class="photo-filter__items">
+            <ul class="photo-filter__list">
+              <li class="photo-filter__item">
+                <input class="photo-filter__input" type="radio" name="correct" value="crop" id="crop" checked>
+                <label class="photo-filter__label" for="crop">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                </label>
+                <div class="photo-filter__controls">
+                  <div class="photo-filter__scale">
+                    <span class="photo-filter__toggle"></span>
                   </div>
                 </div>
               </li>
-              <li class="form-filter__input-list-item  form-photo__input-list-item--line  form-photo__input-list-item--underline">
-                <input class="form-filter__input" type="radio" name="correct" value="fill" id="brightness">
-                <label class="form-filter__label form-filter__label--saturation" for="brightness">
+              <li class="photo-filter__item">
+                <input class="photo-filter__input" type="radio" name="correct" value="fill" id="brightness">
+                <label class="photo-filter__label" for="brightness">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect y="40" width="48" height="3"/>
+                  </svg>
                 </label>
-                <input class="form-filter__input  form-filter__input--range" type="range" name="correct_brightness" min="0" max="100" step="1" value="50">
-                <div class="form-filter__scale-slider  form-photo__scale-slider--brightness">
-                  <div class="form-filter__scale-slider-line">
-                    <span class="form-filter__scale-slider-point form-photo__scale-slider-point--brightness"></span>
+                <div class="photo-filter__controls  photo-filter__controls--brightness">
+                  <div class="photo-filter__scale">
+                    <span class="photo-filter__toggle  photo-filter__toggle--brightness"></span>
                   </div>
                 </div>
               </li>
-              <li class="form-filter__input-list-item  form-photo__input-list-item--line  form-photo__input-list-item--underline">
-                <input class="form-filter__input" type="radio" name="correct" value="contrast" id="contrast">
-                <label class="form-filter__label form-filter__label--balance" for="contrast">
+              <li class="photo-filter__item">
+                <input class="photo-filter__input" type="radio" name="correct" value="contrast" id="contrast">
+                <label class="photo-filter__label  photo-filter__label--balance" for="contrast">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
                 </label>
-                <input class="form-filter__input  form-filter__input--range" type="range" name="correct_contrast" min="0" max="100" step="1" value="3">
-                <div class="form-filter__scale-slider  form-filter__scale-slider--contrast">
-                  <div class="form-filter__scale-slider-line">
-                    <span class="form-filter__scale-slider-point form-filter__scale-slider-point--contrast"></span>
+                <div class="photo-filter__controls  photo-filter__controls--balance">
+                  <div class="photo-filter__scale">
+                    <span class="photo-filter__toggle  photo-filter__toggle--balance"></span>
                   </div>
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="form-filter__btn">
-            <button class="btn btn--post" type="submit">Запостить</button>
-            <button class="btn btn--reset" type="reset">Отмена</button>
+            <div class="photo-filter__btn">
+              <button class="btn btn--post" type="submit">Запостить</button>
+              <button class="btn btn--reset" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer-logo">
-          Pink
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
         </a>
         <section class="social-links">
           <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
@@ -211,7 +245,7 @@
               Фейсбук
             </a><span class="visually-hidden">,</span>
             <a class="social-link  social-link--yt" href="#">
-              Твиттер
+              Youtube
             </a>
         </section>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/">
