@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
 
-  margin-bottom: -68px;
+  margin-bottom: -66px;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -17,18 +17,26 @@
 
   cursor: pointer;
 
-  img {
+  svg {
     height: 22px;
     width: 75px;
+
+    fill: @white-color;
   }
 
-  &:hover {
-    opacity: 0.6;
+  &:hover svg {
+    fill: @decorative-color;
   }
 
-  &:active {
+  &:active svg {
+    fill: @white-color;
     opacity: 0.3;
   }
+}
+
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
 }
 
 @media @mobile-widths-only {
@@ -65,7 +73,20 @@
   }
 
   .page-header__logo {
-    height: 41px;
+    height: 40px;
+
+    svg {
+      width: 147px;
+      height: 40px;
+    }
+  }
+
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: inline-block;
   }
 
 }
@@ -81,14 +102,30 @@
 
 @media @desktop-widths {
 
+  .page-header {
+    margin-bottom: -112px;
+  }
+
   .page-header__logo-wrapper {
     padding: 0;
-    margin-right: 130px;
+    margin-right: 90px;
   }
 
   .page-header__logo {
-    display: inline-block;
     height: 40px;
+
+    svg {
+      width: 147px;
+      height: 40px;
+    }
+  }
+
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: inline-block;
   }
 
   .page-header__wrapper {
@@ -97,7 +134,7 @@
     margin: 0 auto;
     width: 940px;
     padding: 0 1.0416%;
-    padding-top: 25px;
+    padding-top: 27px;
     padding-bottom: 36px;
   }
 

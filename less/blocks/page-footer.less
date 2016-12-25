@@ -10,10 +10,25 @@
   display: inline-block;
   margin-bottom: 33px;
 
-  img {
+  svg {
     width: 147px;
     height: 40px;
+
+    fill: @text-color;
   }
+
+  &:hover svg {
+    fill: @decorative-color;
+  }
+
+  &:active svg {
+    fill: @text-color;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
 }
 
 .page-footer__copyright {
@@ -52,6 +67,14 @@
   .page-footer__wrapper {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .page-footer__logo-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: inline-block;
   }
 
   .page-footer__copyright {
