@@ -9,22 +9,46 @@
   }
 
   .research__wrapper {
+    position: relative;
+
     width: auto;
     max-width: 959px;
     padding: 0 5.8%;
-    padding-top: 59px;
+    padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: center;
 
     &::before {
       content: "";
+
       display: block;
-      width: 38.709%;
-      height: 277px;
+      width: 238px;
+      height: 276px;
       margin-right: 11.290%;
 
-      outline: 1px solid red;
+      background: url("../img/icon-timer.svg") no-repeat 0 0;
+      background-size: 238px 276px;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 115px;
+      left: 8.5%;
+
+      height: 176px;
+      width: 176px;
+
+      font-size: 96px;
+      line-height: 167px;
+      font-weight: 700;
+      text-align: center;
+
+      border: 13px solid @decorative-color;
+      color: @decorative-color;
+      border-radius: 50%;
     }
   }
 
@@ -34,8 +58,8 @@
 
   .research__name {
     display: block;
-    margin-top: 37px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 12px;
     width: 170px;
 
     font-size: 30px;
@@ -46,7 +70,7 @@
 
   .research__text {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 
     line-height: 1.7;
   }
@@ -68,22 +92,36 @@
     padding: 0 1.0416%;
     margin: 0 auto;
     padding-top: 21px;
-    padding-bottom: 66px;
+    padding-bottom: 68px;
+    justify-content: flex-start;
 
     &::before {
       content: "";
       display: block;
-      width: 300px;
-      height: 347px;
-      margin-right: 66px;
+      width: 298px;
+      height: 345px;
+      margin-right: 67px;
 
-      outline: 1px solid red;
+      background-size: 298px 345px;
+    }
+
+    &::after {
+      top: 90px;
+      left: 3.4%;
+
+      height: 219px;
+      width: 219px;
+
+      font-size: 120px;
+      line-height: 208px;
+
+      border: 17px solid @decorative-color;
     }
   }
 
   .research__content {
     width: 525px;
-    margin-top: 58px;
+    margin-top: 40px;
   }
 
   .research__name {
@@ -95,7 +133,7 @@
 
   .research__text {
     margin-bottom: 30px;
-    width: 525px;
+    width: 522px;
 
     font-size: 18px;
   }

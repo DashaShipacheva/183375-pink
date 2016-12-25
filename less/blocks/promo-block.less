@@ -1,10 +1,10 @@
 .promo-block {
-  height: 734px;
+  height: 733px;
 
   background-color: #1d2631;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 176px, center top;
-  background-size: 258px, 700px;
+  background-size: 258px auto, 700px auto;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   padding: 0 13%;
 
   font-size: 0;
@@ -60,10 +60,23 @@
   color: @white-color;
 }
 
+@media(min-width: 320px) and (min-resolution: 144dpi),
+      (min-width: 320px) and (min-resolution: 1.5dppx) {
+
+  .promo-block {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
+
+}
+
 @media @tablet-widths {
 
   .promo-block {
-    height: 726px;
+    height: 728px;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 bottom, center -5px;
+    background-size: 700px auto, 1220px auto;
   }
 
   .promo-block__wrapper {
@@ -74,7 +87,7 @@
 
   .promo-block__title {
     display: block;
-    padding: 0 17.5% 29px;
+    padding: 0 17.5% 30px;
     margin: 0;
 
     font-size: 40px;
@@ -85,7 +98,7 @@
   }
 
   .promo-block__apps {
-    margin-top: 45px;
+    margin-top: 47px;
     margin-bottom: 37px;
     padding: 0 16%;
   }
@@ -96,15 +109,28 @@
 
 }
 
+@media(min-width: 660px) and (min-resolution: 144dpi),
+      (min-width: 660px) and (min-resolution: 1.5dppx) {
+
+  .promo-block {
+    background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+  }
+
+}
+
 @media @desktop-widths {
 
   .promo-block {
     height: 853px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: 27px bottom, center top;
+    background-size: 1050px auto, 2560px auto;
   }
 
   .promo-block__wrapper {
     padding: 218px 646px 0 10px;
-    width: 303px;
+    width: 300px;
 
     text-align: center;
   }
@@ -119,10 +145,19 @@
   }
 
   .promo-block__apps {
-    margin-top: 65px;
+    margin-top: 67px;
     margin-bottom: 57px;
     padding: 0 45px;
     padding-right: 50px;
+  }
+
+}
+
+@media(min-width: 960px) and (min-resolution: 144dpi),
+      (min-width: 960px) and (min-resolution: 1.5dppx) {
+
+  .promo-block {
+    background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
   }
 
 }
