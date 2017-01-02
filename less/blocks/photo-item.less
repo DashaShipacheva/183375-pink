@@ -55,7 +55,7 @@
   flex-wrap: wrap;
   padding: 18px 6.428% 20px;
 
-  background-color: #f2f2f2;
+  background-color: @bg-main-color;
 }
 
 .photo-item__user {
@@ -102,6 +102,7 @@
   margin-right: 8%;
 
   background: url("../img/icon-heart.svg") no-repeat 0 0;
+  cursor: pointer;
 }
 
 
@@ -219,11 +220,6 @@
     &--another {
       width: 100vw;
       height: 505px;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
 
       &::before {
         top: 53px;

@@ -1,5 +1,5 @@
 .rates {
-  background-color: #f2f2f2;
+  background-color: @bg-main-color;
   background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -9,6 +9,10 @@
 .rates__wrapper {
   padding-top: 88px;
   padding-bottom: 43px;
+}
+
+.rates__table-wrapper {
+  overflow: hidden;
 }
 
 .rates__table {
@@ -30,7 +34,7 @@
 
   text-transform: uppercase;
   color: @white-color;
-  background-color: @text-color;
+  background-color: @primary-color;
   border: @border-table;
 }
 
@@ -102,13 +106,13 @@
 }
 
 .rates__toggle {
-  border: 3px solid #f2f2f2;
+  border: 3px solid @bg-main-color;
 }
 
 #rates-btn-1:checked ~ .rates__toggles .rates__toggle[for="rates-btn-1"],
 #rates-btn-2:checked ~ .rates__toggles .rates__toggle[for="rates-btn-2"],
 #rates-btn-3:checked ~ .rates__toggles .rates__toggle[for="rates-btn-3"] {
-  border: 3px solid @text-color;
+  border: 3px solid @primary-color;
   background-color: @white-color;
   opacity: 1;
 }
@@ -135,6 +139,10 @@
     display: none;
   }
 
+  .rates__table-wrapper {
+    overflow: visible;
+  }
+
   .rates__table {
     width: 100%;
     margin-bottom: 0;
@@ -144,7 +152,7 @@
     padding: 13px 0 10px;
 
     &:first-child {
-      background-color: #f2f2f2;
+      background-color: @bg-main-color;
       border: none;
     }
   }

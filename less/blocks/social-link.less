@@ -1,7 +1,7 @@
 .social-link {
   display: block;
-  width: 52px;
-  height: 51px;
+  width: 50px;
+  height: 50px;
   margin: 0 2%;
 
   text-decoration: none;
@@ -14,14 +14,50 @@
     width: 100%;
     height: 100%;
 
-    fill: #221f1f;
+    fill: @decorative-color;
+  }
+
+  &--yt {
+    padding: 15px 13px 17px 17px;
+  }
+
+  &--fb {
+    padding: 12px 18px 15px;
+  }
+
+  &--tw {
+    padding: 16px 13px 15px 14px;
+  }
+
+  &:hover {
+    border: 3px solid @primary-color;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 
 @media @tablet-widths {
 
   .social-link {
+    margin: 0;
 
+    &--fb {
+      margin: 0 7%;
+    }
+  }
+
+}
+
+@media @desktop-widths {
+
+  .social-link {
+    margin: 0;
+
+    &--fb {
+      margin: 0 12px;
+    }
   }
 
 }

@@ -4,23 +4,23 @@
     fill: #8d949b;
   }
 
-}
-
-@media @mobile-and-tablet-widths {
-
-  .photo-filter {
-    background-color: #f2f2f2;
-  }
-
   .photo-filter__form {
     .container();
   }
 
 }
 
+@media @mobile-and-tablet-widths {
+
+  .photo-filter {
+    background-color: @bg-main-color;
+  }
+
+}
+
 .photo-filter__form {
   padding-top: 20px;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 
   text-align: center;
 }
@@ -44,6 +44,9 @@
   left: 50%;
   right: 50%;
 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100vw;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -64,12 +67,12 @@
   cursor: pointer;
 
   &--balance {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   svg {
     width: 100%;
-    fill: #b5b9be;
+    fill: @btn-reset-hover-color;
   }
 }
 
@@ -114,7 +117,7 @@
 .photo-filter__scale {
   height: 2px;
 
-  background-color: @text-color;
+  background-color: @primary-color;
 }
 
 .photo-filter__toggle {
@@ -149,8 +152,12 @@
 
   .photo-filter__form {
     display: flex;
+    max-width: 959px;
+    padding-right: 5.8%;
+    padding-left: 5.8%;
     padding-top: 57px;
     padding-bottom: 54px;
+    margin: 0 auto;
   }
 
   .photo-filter__image {
@@ -275,10 +282,9 @@
 
   .photo-filter__form {
     width: 940px;
-    margin: 0 auto;
     padding: 55px 60px 56px 80px;
 
-    background-color: #f2f2f2;
+    background-color: @bg-main-color;
     box-sizing: border-box;
   }
 
