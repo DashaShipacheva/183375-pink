@@ -4,7 +4,7 @@
   padding: 15px 0 17px;
 
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   font-weight: 700;
   text-align: center;
 
@@ -45,19 +45,19 @@
   }
 
   &--reset {
-    color: #dddfe0;
-    border: 3px solid #dddfe0;
+    color: @btn-reset-color;
+    border: 3px solid @btn-reset-color;
 
     &:hover {
-      color: #b5b9be;
-      border: 3px solid #b5b9be;
+      color: @btn-reset-hover-color;
+      border: 3px solid @btn-reset-hover-color;
       background-color: transparent;
     }
 
     &:active {
-      border: 3px solid #b5b9be;
+      border: 3px solid @btn-reset-hover-color;
       color: rgba(255, 255, 255, 0.3);
-      background-color: #b5b9be;
+      background-color: @btn-reset-hover-color;
     }
   }
 
@@ -110,14 +110,14 @@
       margin-bottom: 0;
 
       font-size: 18px;
-      line-height: 18px;
+      line-height: 1;
     }
 
     &--reset {
       width: 183px;
 
       font-size: 18px;
-      line-height: 18px;
+      line-height: 1;
     }
 
     &--form {
